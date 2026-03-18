@@ -1,4 +1,4 @@
-# PrinterFileGen
+# PrinterFileGen.exe
 Will do one day
 
 Some things need to be optimized (making a BMP.cpp file for example).
@@ -34,3 +34,15 @@ It likely only works on Windows at the moment.
 
 If the masks aren't showing up correctly on the printer, load the bitmap images into mspaint and save.
 There have been some issues with using Photoshop generated bitmaps that I have not yet resolved.
+
+# printer_gbr_converter.py
+Converts .gbr Gerber files into .bmp Bitmap image files sized at ~59 DPmm (Dots Per mm) for use with the printer.
+
+Should serve as a half-decent pipelining tool for automating the creation of .bmp files from PCB files for use with PrinterFileGen.exe.
+
+**Using this requires installing the libraries used in the program. It also may only work with KiCad outputs.**
+
+Instructions on Use:
+- Put printer_gbr_converter.py in the same folder as .gbr files
+- Run
+- Output files can be found in the bmp_out folder within the folder the program was run in
