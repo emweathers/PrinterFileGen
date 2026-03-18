@@ -41,6 +41,7 @@ Converts .gbr Gerber files into .bmp Bitmap image files sized at ~59 DPmm (Dots 
 Should serve as a half-decent pipelining tool for automating the creation of .bmp files from PCB files for use with PrinterFileGen.exe.
 
 **Using this requires installing the libraries used in the program. It also may only work with KiCad outputs.**
+**Of the output gerbers, one which ends with "Edge_Cuts.gbr" is needed to establish the PCB border.**
 
 Instructions on Use:
 - Put printer_gbr_converter.py in the same folder as .gbr files
