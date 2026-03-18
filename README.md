@@ -47,3 +47,5 @@ Instructions on Use:
 - Put printer_gbr_converter.py in the same folder as .gbr files
 - Run
 - Output files can be found in the bmp_out folder within the folder the program was run in
+
+TODO: Make it use Protel file extensions
