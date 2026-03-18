@@ -9,7 +9,7 @@ px_size = 0.017 # In mm
 path = "."
 files = [f for f in os.listdir(path) if (os.path.isfile(os.path.join(path,f)) and f.endswith("gbr"))]
 
-border = GerberFile.from_file("chip_tester-Edge_Cuts.gbr")
+border = GerberFile.from_file([f for f in os.listdir(path) if (os.path.isfile(os.path.join(path,f)) and f.endswith("Edge_Cuts.gbr"))][0])
 imgbuf = io.BytesIO()
 
 os.makedirs("bmp_out", exist_ok=True)
